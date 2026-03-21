@@ -1,3 +1,15 @@
+install.packages("data.table")
+install.packages("plyr")
+install.packages("dplyr")
+install.packages("rvest")
+install.packages("sqldf")
+install.packages("stringr")
+install.packages("progress")
+install.packages("httr")
+install.packages("pdftools")
+
+
+
 library(data.table)
 library(plyr)
 library(dplyr)
