@@ -155,6 +155,9 @@ mairie_webdocs_all_results <- as.data.frame(matrix(nrow = 1, ncol = 6))
 colnames(mairie_webdocs_all_results) <- c("Code INSEE","mot","URL","link","found","found_in_url") 
 
 
+data_all <- data_all[order(data_all$`Code INSEE`),]
+data_all <- data_all[!duplicated(data_all), ]
+
 #######################################################
 ################## Preparation URL ####################
 #######################################################
