@@ -30,6 +30,9 @@ jobs:
 
       - name: Import data
         run: Rscript -e 'source("import-data.R")'
+        
+        on_error:
+        message: "R failed for {{ args.item }}: {{ error }}"
 
       - name: Commit results
         run: |
