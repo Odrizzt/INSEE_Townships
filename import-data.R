@@ -165,6 +165,5 @@ print("Data ready")
 ######################## 
 ### Data preparation ### 
 ######################## 
-
-write.csv(data_all, "townships-united.csv", row.names=FALSE)
+saveRDS(d, file = "townships-united.rds")
 rm(list = ls())
