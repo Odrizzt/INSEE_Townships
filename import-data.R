@@ -168,5 +168,6 @@ print("Data ready")
 
 data_all %>%
   write_rds("townships-united.rds")
+write.csv2(data_all,file="townships-united.csv")
 
 rm(list = ls())
