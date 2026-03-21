@@ -165,5 +165,5 @@ print("Data ready")
 ######################## 
 ### Data preparation ### 
 ######################## 
-saveRDS(d, file = "townships-united.rds")
+saveRDS(data_all, file = "townships-united.rds")
 rm(list = ls())
