@@ -1,3 +1,14 @@
+library(data.table)
+library(plyr)
+library(dplyr)
+library(rvest)
+library(sqldf)
+library(stringr)
+library(progress)
+library(httr)
+library(pdftools)
+
+
 rm(list = ls())
 ###rrrr <- read.csv(url("https://www.data.gouv.fr/fr/datasets/r/73302880-e4df-4d4c-8676-1a61bb997f3d"))
 ##ad <- read.table("https://www.data.gouv.fr/fr/datasets/r/73302880-e4df-4d4c-8676-1a61bb997f3d")
