@@ -24,6 +24,7 @@ jobs:
             any::progress
             any::httr
             any::pdftools
+            any::tidyverse
 
       - name: Check out repository
         uses: actions/checkout@v4

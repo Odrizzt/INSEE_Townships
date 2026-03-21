@@ -7,7 +7,7 @@ install.packages("stringr")
 install.packages("progress")
 install.packages("httr")
 install.packages("pdftools")
-
+install.packages("tidyverse")
 
 
 library(data.table)
@@ -19,7 +19,7 @@ library(stringr)
 library(progress)
 library(httr)
 library(pdftools)
-
+library(tidyverse)
 
 rm(list = ls())
 
@@ -165,5 +165,8 @@ print("Data ready")
 ######################## 
 ### Data preparation ### 
 ######################## 
-saveRDS(data_all, file = "townships-united.rds")
+
+data_all %>%
+  write_rds("townships-united.rds")
+
 rm(list = ls())
