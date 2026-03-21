@@ -16,7 +16,7 @@ jobs:
             any::tidyverse 
             any::googlesheets4
             any::data.table
-            any::(plyr
+            any::plyr
             any::dplyr
             any::rvest
             any::sqldf
