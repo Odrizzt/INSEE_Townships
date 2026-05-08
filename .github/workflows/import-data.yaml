@@ -25,6 +25,7 @@ jobs:
             any::httr
             any::pdftools
             any::tidyverse
+            any::arrow
 
       - name: Check out repository
         uses: actions/checkout@v4
