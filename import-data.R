@@ -8,6 +8,7 @@ install.packages("progress")
 install.packages("httr")
 install.packages("pdftools")
 install.packages("tidyverse")
+install.packages("arrow")
 
 
 library(data.table)
@@ -20,6 +21,7 @@ library(progress)
 library(httr)
 library(pdftools)
 library(tidyverse)
+library(arrow)
 
 rm(list = ls())
 
@@ -171,6 +173,8 @@ print("Data ready")
 
 data_all %>%
   write_rds("townships-united.rds")
+
 write.csv2(data_all,file="townships-united.csv")
 
+write_parquet(data_all, "townships-united.parquet")
 rm(list = ls())
