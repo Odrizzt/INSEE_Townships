@@ -30,7 +30,7 @@ jobs:
             any::arrow
 
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Import data
         run: Rscript -e 'source("import-data.R")'
