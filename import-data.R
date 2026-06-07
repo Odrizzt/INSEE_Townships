@@ -174,6 +174,8 @@ print("Data ready")
 data_all %>%
   write_rds("townships-united.rds")
 
+setwd("/src")
+
 write.csv2(data_all,file="townships-united.csv")
 
 write_parquet(data_all, "townships-united.parquet")
