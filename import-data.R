@@ -174,7 +174,7 @@ print("Data ready")
 data_all %>%
   write_rds("townships-united.rds")
 
-write.csv2(data_all,file="src\townships-united.csv")
+write.csv2(data_all,file="townships-united.csv")
 
-write_parquet(data_all, "src\townships-united.parquet")
+write_parquet(data_all, "townships-united.parquet")
 rm(list = ls())
